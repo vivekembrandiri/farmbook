@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:id="@+id/notification_pic"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="10dip" />
+
+    <TextView
+        android:layout_width="220dip"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_description"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/notification_pic"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/notification_timestamp"
+        android:layout_alignLeft="@id/notification_description"
+        android:layout_below="@id/notification_description"
+        android:layout_marginTop="10dip"
+        android:text="Timestamp"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+</RelativeLayout>

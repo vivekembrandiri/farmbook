@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <ImageButton
+            android:id="@+id/selectprofilepic_camera"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="200dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/selectprofilepic_image"
+            android:layout_width="100dip"
+            android:layout_height="100dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/selectprofilepic_camera"
+            android:layout_marginRight="30dip"
+            android:background="@android:color/transparent"
+            android:src="@drawable/upload_image" />
+    </RelativeLayout>
+
+</LinearLayout>

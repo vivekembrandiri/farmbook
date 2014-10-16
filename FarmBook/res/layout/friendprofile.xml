@@ -1,0 +1,83 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <ImageView
+            android:id="@+id/friendprofile_profilepic"
+            android:layout_width="96dip"
+            android:layout_height="96dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip" />
+
+        <TextView
+            android:id="@+id/friendprofile_name"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@id/friendprofile_profilepic"
+            android:layout_marginLeft="10dip"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/friendprofile_location"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/friendprofile_name"
+            android:layout_below="@id/friendprofile_name"
+            android:layout_marginTop="10dip"
+            android:textColor="#FFFFFFFF" />
+
+        <TextView
+            android:id="@+id/friendprofile_phoneno"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/friendprofile_name"
+            android:layout_below="@id/friendprofile_location"
+            android:layout_marginTop="10dip"
+            android:textColor="#FFFFFFFF" />
+
+        <ImageButton
+            android:id="@+id/friendprofile_add"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/friendprofile_profilepic"
+            android:layout_marginLeft="100dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/border_green"
+            android:scaleType="centerInside"
+            android:src="@drawable/tick_icon" />
+
+        <ImageButton
+            android:id="@+id/friendprofile_cancel"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignTop="@id/friendprofile_add"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/friendprofile_add"
+            android:background="@drawable/border_red"
+            android:scaleType="centerInside"
+            android:src="@drawable/cancel_icon" />
+
+        <ImageButton
+            android:id="@+id/friendprofile_back"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignTop="@id/friendprofile_add"
+            android:layout_below="@id/friendprofile_profilepic"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border_red"
+            android:scaleType="centerInside"
+            android:src="@drawable/cancel_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

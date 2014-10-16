@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mypackage"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+   <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/customTheme"
+        android:name=".FarmbookApplication" >
+        
+        <activity
+            android:name=".Starter" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:label="@string/home"
+            android:name=".Home" />
+        <activity
+            android:label="@string/wall"
+            android:name=".Wall" />
+        <activity
+            android:label="@string/question"
+            android:name=".Question" />
+        <activity
+            android:label="@string/notifications"
+            android:name=".Notifications" />
+        <activity
+            android:label="@string/news"
+            android:name=".News" />
+        <activity
+            android:label="@string/createpost"
+            android:name=".CreatePost" />
+        <activity
+            android:label="@string/takephoto"
+            android:name=".TakePhoto" />
+        <activity
+            android:label="@string/uploadphoto"
+            android:name=".UploadPhoto" />
+        <activity
+            android:label="@string/uploadphoto"
+            android:name=".SelectProfilePic" />
+        <activity
+            android:label="@string/profile"
+            android:name=".Profile" />
+        <activity
+            android:label="@string/register"
+            android:name=".Register" />
+        <activity
+            android:label="@string/addfriends"
+            android:name=".Friends" />
+        <activity
+            android:label="@string/findfriend"
+            android:name=".FindFriend" />
+        <activity
+            android:label="@string/friendprofile"
+            android:name=".FriendProfile" />
+        <activity
+            android:label="@string/soundrecorder"
+            android:name=".SoundRecord" />
+        <activity
+            android:label="@string/uploadaudio"
+            android:name=".UploadAudio" />
+        <activity
+			android:name="org.anddev.android.weatherforecast.WeatherForecast"/> 
+    </application>
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.READ_SMS" />
+	<uses-permission android:name="android.permission.WRITE_SMS" />
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.SEND_SMS" />	
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+		
+	
+	<uses-feature android:name="android.hardware.camera" />
+
+</manifest>

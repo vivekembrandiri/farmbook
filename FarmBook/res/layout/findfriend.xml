@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <Button
+            android:id="@+id/findfriend_number_2"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:text="2"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_5"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_2"
+            android:layout_below="@id/findfriend_number_2"
+            android:text="5"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_8"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_2"
+            android:layout_below="@id/findfriend_number_5"
+            android:text="8"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_1"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/findfriend_number_2"
+            android:layout_toLeftOf="@id/findfriend_number_2"
+            android:text="1"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_4"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_1"
+            android:layout_below="@id/findfriend_number_1"
+            android:text="4"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_7"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_1"
+            android:layout_below="@id/findfriend_number_4"
+            android:text="7"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_3"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/findfriend_number_2"
+            android:layout_toRightOf="@id/findfriend_number_2"
+            android:text="3"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_6"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_3"
+            android:layout_below="@id/findfriend_number_3"
+            android:text="6"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_9"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_3"
+            android:layout_below="@id/findfriend_number_6"
+            android:text="9"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_0"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/findfriend_number_7"
+            android:layout_toLeftOf="@id/findfriend_number_7"
+            android:text="0"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_clear"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignTop="@id/findfriend_number_6"
+            android:layout_toRightOf="@id/findfriend_number_6"
+            android:text="X"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/findfriend_number_backspace"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignLeft="@id/findfriend_number_clear"
+            android:layout_below="@id/findfriend_number_clear"
+            android:text="C"
+            android:textSize="8pt" />
+
+        <TextView
+            android:id="@+id/findfriend_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/findfriend_number_8"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="Phone Number:"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <TextView
+            android:id="@+id/findfriend_number"
+            android:layout_width="280dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/findfriend_number_label"
+            android:layout_below="@id/findfriend_number_label"
+            android:layout_marginTop="10dip"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000"
+            android:textSize="10pt" />
+
+        <ImageButton
+            android:id="@+id/findfriend_ok"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/findfriend_number"
+            android:layout_marginLeft="100dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/border_green"
+            android:scaleType="centerInside"
+            android:src="@drawable/tick_icon" />
+
+        <ImageButton
+            android:id="@+id/findfriend_cancel"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_alignTop="@id/findfriend_ok"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@id/findfriend_ok"
+            android:background="@drawable/border_red"
+            android:scaleType="centerInside"
+            android:src="@drawable/cancel_icon" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/bar" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background" >
+
+        <ImageButton
+            android:id="@+id/main_button1"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="60dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside" />
+
+        <ImageButton
+            android:id="@+id/main_button2"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignTop="@id/main_button1"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/friend_circle" />
+
+        <ImageButton
+            android:id="@+id/main_button3"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/main_button1"
+            android:layout_marginRight="20dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_friend" />
+
+        <ImageButton
+            android:id="@+id/main_button4"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button1"
+            android:layout_below="@id/main_button1"
+            android:layout_marginTop="20dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/main_button5"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button2"
+            android:layout_alignTop="@id/main_button4"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/wall" />
+
+        <ImageButton
+            android:id="@+id/main_button6"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button3"
+            android:layout_alignTop="@id/main_button4"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/upload_server" />
+
+        <ImageButton
+            android:id="@+id/main_button7"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button1"
+            android:layout_below="@id/main_button4"
+            android:layout_marginTop="20dip"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/record_audio" />
+
+        <ImageButton
+            android:id="@+id/main_button8"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button2"
+            android:layout_alignTop="@id/main_button7"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/news_icon" />
+
+        <ImageButton
+            android:id="@+id/main_button9"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_alignLeft="@id/main_button3"
+            android:layout_alignTop="@id/main_button7"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/notification" />
+
+        <Button
+            android:id="@+id/main_notification_number"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@id/main_button9"
+            android:layout_alignRight="@id/main_button9"
+            android:background="@color/red"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</LinearLayout>

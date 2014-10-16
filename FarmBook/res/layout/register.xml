@@ -1,0 +1,143 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip" >
+
+        <TextView
+            android:id="@+id/register_firstname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="First Name:"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/register_firstname"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/register_firstname_label"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/register_firstname_label"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/register_lastname_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/register_firstname_label"
+            android:layout_below="@id/register_firstname_label"
+            android:layout_marginTop="15dip"
+            android:text="Last Name:"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/register_lastname"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/register_firstname"
+            android:layout_alignTop="@id/register_lastname_label"
+            android:layout_toRightOf="@id/register_lastname_label"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/register_location_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/register_firstname_label"
+            android:layout_below="@id/register_lastname_label"
+            android:layout_marginTop="15dip"
+            android:text="Location:"
+            android:textColor="#FFFFFF"
+            android:textSize="10pt" />
+
+        <EditText
+            android:id="@+id/register_location"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/register_firstname"
+            android:layout_alignTop="@id/register_location_label"
+            android:layout_toRightOf="@id/register_location_label"
+            android:background="@android:drawable/editbox_background"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:id="@+id/register_sex_malepic"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/register_location"
+            android:layout_marginLeft="95dip"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/profile_man" />
+
+        <ImageView
+            android:id="@+id/register_sex_femalepic"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignTop="@id/register_sex_malepic"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/register_sex_malepic"
+            android:background="@drawable/profile_female" />
+
+        <RadioGroup
+            android:id="@+id/register_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/register_sex_malepic"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/register_sex_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/register_sex_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/register_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/register_sex"
+            android:layout_marginLeft="25dip"
+            android:layout_marginTop="15dip"
+            android:text="Select Profile Picture" />
+
+        <Button
+            android:id="@+id/register_register"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/register_select"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/register_select"
+            android:text="Register" />
+
+        <ImageView
+            android:id="@+id/register_image_preview"
+            android:layout_width="200dip"
+            android:layout_height="200dip"
+            android:layout_below="@id/register_select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dip" />
+    </RelativeLayout>
+
+</ScrollView>

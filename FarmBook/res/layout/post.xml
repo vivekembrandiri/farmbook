@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/post_profilepic"
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/profile_man" />
+
+    <TextView
+        android:id="@+id/post_phoneno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/post_profilepic"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/post_text"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/post_phoneno"
+        android:layout_below="@id/post_phoneno"
+        android:layout_marginTop="10dip"
+        android:text="Text"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/post_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/post_phoneno"
+        android:layout_below="@id/post_text"
+        android:layout_marginTop="10dip"
+        android:text="Timestamp"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_below="@id/post_timestamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/post_expand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/transparent"
+        android:src="@drawable/expand_button" />
+
+    <ImageButton
+        android:id="@+id/post_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="65dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

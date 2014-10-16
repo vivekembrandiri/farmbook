@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Farmbook</string>
+    <string name="wall">Wall</string>
+    <string name="takephoto">Take a Photo</string>
+    <string name="profile">Profile</string>
+    <string name="register">New User Registration</string>
+    <string name="addfriends">Add Friends</string>
+    <string name="uploadphoto">Upload Photo</string>
+    <string name="findfriend">Find Friend</string>
+    <string name="friendprofile">Friend Profile</string>
+    <string name="mediaplayer">Media Player</string>
+    <string name="soundrecorder">Sound Recorder</string>
+    <string name="uploadaudio">Upload Audio</string>
+    <string name="question">Question</string>
+    <string name="createpost">Create Post</string>
+    <string name="home">Home Page</string>
+    <string name="notifications">Notifications</string>
+    <string name="news">News</string>
+
+</resources>

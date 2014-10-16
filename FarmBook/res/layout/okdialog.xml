@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:background="@color/cyan"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/okdialog_tv"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:textSize="8pt"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/okdialog_ok"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/okdialog_tv"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/border_green"
+        android:scaleType="centerInside"
+        android:src="@drawable/tick_icon" />
+
+</RelativeLayout>

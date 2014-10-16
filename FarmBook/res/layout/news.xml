@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/news_pic"
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/seeds" />
+
+    <TextView
+        android:id="@+id/news_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/news_pic"
+        android:text="Text"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <TextView
+        android:id="@+id/news_timestamp"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/news_text"
+        android:layout_below="@id/news_text"
+        android:layout_marginTop="10dip"
+        android:text="Timestamp"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_below="@id/news_timestamp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dip"
+        android:scaleType="centerInside" />
+
+    <ImageButton
+        android:id="@+id/news_audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@android:color/transparent" />
+
+</RelativeLayout>

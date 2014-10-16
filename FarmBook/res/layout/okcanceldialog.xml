@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dip"
+    android:layout_height="wrap_content"
+    android:background="@color/cyan"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/okcanceldialog_tv"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dip"
+        android:textSize="8pt"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/okcanceldialog_ok"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_below="@id/okcanceldialog_tv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="40dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/border_green"
+        android:scaleType="centerInside"
+        android:src="@drawable/tick_icon" />
+
+    <ImageButton
+        android:id="@+id/okcanceldialog_cancel"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40dip"
+        android:layout_alignTop="@id/okcanceldialog_ok"
+        android:background="@drawable/border_red"
+        android:scaleType="centerInside"
+        android:src="@drawable/cancel_icon" />
+
+</RelativeLayout>

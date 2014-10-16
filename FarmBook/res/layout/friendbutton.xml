@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/friendbutton"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/friendbutton_profilepic"
+        android:layout_width="72dip"
+        android:layout_height="72dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" />
+
+    <TextView
+        android:id="@+id/friendbutton_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="15dip"
+        android:layout_toRightOf="@id/friendbutton_profilepic"
+        android:text="Text"
+        android:textColor="#FFFFFF"
+        android:textSize="6pt" />
+
+</RelativeLayout>
